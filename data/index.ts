@@ -1,7 +1,10 @@
+import { link } from "fs";
+import { url } from "inspector";
+
 export const navItems = [
     { name: "About", link: "#about" },
+    { name: "Skills", link: "#Skills" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -68,23 +71,259 @@ export const navItems = [
       spareImg: "",
     },
   ];
+
+  export const Skill_data = [
+    {
+      skill_name: "Html 5",
+      Image: "/html.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Css",
+      Image: "/css.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Java Script",
+      Image: "/js.png",
+      width: 65,
+      height: 65,
+    },
+    {
+      skill_name: "Tailwind Css",
+      Image: "/tailwind.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "React",
+      Image: "/react.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Redux",
+      Image: "/redux.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "React Query",
+      Image: "/reactquery.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Type Script",
+      Image: "/ts.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Next js 13",
+      Image: "/next.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Framer Motion",
+      Image: "/framer.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Stripe Payment",
+      Image: "/stripe.webp",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Node js",
+      Image: "/node-js.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Mongo db",
+      Image: "/mongodb.png",
+      width: 40,
+      height: 40,
+    },
+  
+  ];
+
+  export const Frontend_skill = [
+    {
+      skill_name: "Html 5",
+      Image: "/html.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Css",
+      Image: "/css.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Java Script",
+      Image: "/js.png",
+      width: 65,
+      height: 65,
+    },
+    {
+      skill_name: "Tailwind Css",
+      Image: "/tailwind.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Material UI",
+      Image: "/mui.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "React",
+      Image: "/react.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Redux",
+      Image: "/redux.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "React Query",
+      Image: "/reactquery.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Type Script",
+      Image: "/ts.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Next js 13",
+      Image: "/next.png",
+      width: 80,
+      height: 80,
+    },
+  ];
+  
+  export const Backend_skill = [
+    {
+      skill_name: "Node js",
+      Image: "/node-js.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Express js",
+      Image: "/express.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Mongo db",
+      Image: "/mongodb.png",
+      width: 40,
+      height: 40,
+    },
+    {
+      skill_name: "Fire base",
+      Image: "/Firebase.png",
+      width: 55,
+      height: 55,
+    },
+    {
+      skill_name: "Postger SQL",
+      Image: "/postger.png",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "My SQL",
+      Image: "/mysql.png",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Restful",
+      Image: "/Rest.png",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Graphql",
+      Image: "/graphql.png",
+      width: 80,
+      height: 80,
+    },
+  ];
+  
+  export const Full_stack = [
+    {
+      skill_name: "React Native",
+      Image: "/ReactNative .png",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "VS Code",
+      Image: "/VSC.png",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "GitHub",
+      Image: "/Git.png",
+      width: 70,
+      height: 70,
+    },
+  
+    {
+      skill_name: "Figma",
+      Image: "/figma.png",
+      width: 50,
+      height: 50,
+    },
+  
+  ];
+  
+  
+  
+  export const Other_skill = [
+    {
+      skill_name: "Python",
+      Image: "/Python.png",
+      width: 60,
+      height: 60,
+    },
+  ];
   
   export const projects = [
     {
       id: 1,
-      title: "E-Commerce food cart page",
-      des: "A food cart page using redux toolkit with all functions.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "/ui.earth.com",
+      title: "Flavoro",
+      des: "A food cart website using redux toolkit with all functions.",
+      img: "/fp1.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg",],
+      link: "https://flavoro-chi.vercel.app/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "/ui.yoom.com",
+      title: "Animated Apple Iphone 3D Website",
+      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      img: "/p4.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      link: "https://iphone-azure.vercel.app/",
     },
     {
       id: 3,
@@ -96,11 +335,11 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "/ui.apple.com",
+      title: "Sundown Studio",
+      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      img: "/p1.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      link: "https://rahul-yadav-88.github.io/Sunboard_web/",  
     },
   ];
   
@@ -200,18 +439,19 @@ export const navItems = [
       thumbnail: "/exp4.svg",
     },
   ];
+
+ 
   
   export const socialMedia = [
     {
       id: 1,
       img: "/git.svg",
+      link:"https://github.com/Rahul-Yadav-88"
     },
-    {
-      id: 2,
-      img: "/twit.svg",
-    },
+    
     {
       id: 3,
       img: "/link.svg",
+     link:"https://www.linkedin.com/in/rahul-yadav-806a78268"
     },
   ];
