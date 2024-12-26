@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { projects } from '@/data/index'
 import { PinContainer } from './ui/3d-pin'

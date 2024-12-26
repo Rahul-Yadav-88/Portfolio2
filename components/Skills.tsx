@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { Backend_skill, Frontend_skill, Full_stack, Other_skill, Skill_data } from '@/data'
 import SkillDataProvider from './ui/SkillDataProvider'
