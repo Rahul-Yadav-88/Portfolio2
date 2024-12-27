@@ -5,7 +5,6 @@ import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Approach from "@/components/Approach";
 import { navItems } from "@/data";
-// import { FaHome } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 export default function Home() {
